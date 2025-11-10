@@ -17,20 +17,25 @@ header {
   justify-content: center;
   background-color: #004080;
   padding: 10px;
+  gap: 30px;
 }
 
-.navbar a, .dropbtn {
+.navbar a {
   color: white;
   padding: 10px 16px;
   text-decoration: none;
-  background: none;
-  border: none;
-  cursor: pointer;
+  font-weight: bold;
   font-size: 16px;
+  border-bottom: 3px solid transparent;
+  transition: 0.2s;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: #0066cc;
+.navbar a:hover {
+  border-bottom: 3px solid #66a3ff;
+}
+
+.navbar a.active {
+  border-bottom: 3px solid #ffffff;
 }
 
 .dropdown {
@@ -105,3 +110,4 @@ footer {
 .entradas h3 a:hover {
   text-decoration: underline;
 }
+
