@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // mensaje bienvenida
-  if (current === "entrada1.html") {
+  if (current === "index.html") {
     const main = document.querySelector("main");
     const welcome = document.createElement("p");
     welcome.textContent = "¡Bienvenido al blog del Deportivo de La Coruña!";
