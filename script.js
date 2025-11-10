@@ -10,28 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // animacion de aparicion de parrafos
-  const paragraphs = document.querySelectorAll("main p");
-  paragraphs.forEach((p, i) => {
-    setTimeout(() => { p.style.opacity = 1; }, 200 * i);
-  });
-
-  // boton ver mas
-  paragraphs.forEach((p, i) => {
-    if (i >= 2) {
-      p.style.display = "none";
-      const btn = document.createElement("button");
-      btn.textContent = "Ver más";
-      btn.style.marginBottom = "10px";
-      btn.style.display = "block";
-      btn.onclick = () => {
-        p.style.display = "block";
-        btn.remove();
-      };
-      p.parentNode.insertBefore(btn, p);
-    }
-  });
-
   // mensaje de bienvenida
   const main = document.querySelector("main");
   const welcome = document.createElement("p");
