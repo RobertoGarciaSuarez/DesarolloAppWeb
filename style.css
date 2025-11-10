@@ -16,6 +16,11 @@ header {
   padding: 80px 20px;
   text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
 }
+p {
+  line-height: 1.6;
+  opacity: 1; /* antes era 0 */
+  transition: opacity 0.8s;
+}
 
 h1 {
   margin: 0;
@@ -99,4 +104,5 @@ figcaption {
 #topBtn:hover {
   background-color: #66a3ff;
 }
+
 
