@@ -1,20 +1,26 @@
+/* Fuente moderna */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   background-color: #f2f7fc;
   color: #333;
 }
 
 header {
-  background-color: #0056b3;
+  background-image: url('riazor.jpg'); /* reemplaza con tu imagen */
+  background-size: cover;
+  background-position: center;
   color: white;
   text-align: center;
-  padding: 20px 0;
+  padding: 80px 20px;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
 }
 
 h1 {
   margin: 0;
-  font-size: 28px;
+  font-size: 36px;
 }
 
 .navbar {
@@ -32,11 +38,13 @@ h1 {
   font-weight: bold;
   font-size: 16px;
   border-bottom: 3px solid transparent;
-  transition: 0.2s;
+  border-radius: 5px;
+  transition: 0.3s;
 }
 
 .navbar a:hover {
-  border-bottom: 3px solid #66a3ff;
+  background-color: #66a3ff;
+  color: #004080;
 }
 
 .navbar a.active {
@@ -46,18 +54,48 @@ h1 {
 main {
   max-width: 900px;
   margin: 40px auto;
-  padding: 0 20px;
+  padding: 20px;
   background-color: white;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
 h2 {
   color: #0056b3;
-  border-bottom: 2px solid #66a3ff;
+  border-bottom: 3px solid #66a3ff;
   padding-bottom: 5px;
 }
 
 p {
   line-height: 1.6;
+  opacity: 0; /* Para animación JS */
+  transition: opacity 0.8s;
 }
+
+figure {
+  text-align: center;
+  margin: 20px 0;
+}
+
+figure img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+figcaption {
+  margin-top: 5px;
+  font-style: italic;
+  color: #555;
+}
+
+/* Botón "Volver arriba" */
+#topBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radiu
